@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dark Theme Login Page</title>
+<style>
+/* Background image */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://images.unsplash.com/photo-1527689368864-3a821dbccc34?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+    font-family: Arial, sans-serif;
+}
+
+/* Overlay for dark effect */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: -1;
+}
+
+/* Login Box */
+.login-container {
+    background: rgba(20, 20, 20, 0.9);
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+    width: 350px;
+    text-align: center;
+    color: #fff;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #0ff;
+    font-size: 28px;
+}
+
+/* Input fields */
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background: #111;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    box-shadow: inset 0 0 10px rgba(0,255,255,0.3);
+}
+
+/* Button */
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #0ff;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-container button:hover {
+    background: #00bcd4;
+    box-shadow: 0 0 15px #0ff, 0 0 30px #0ff;
+}
+
+/* Links */
+.login-container a {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #aaa;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.login-container a:hover {
+    color: #0ff;
+}
+</style>
+</head>
+<body>
+<div class="overlay"></div>
+<div class="login-container">
+    <h2>Login</h2>
+    <form>
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+        <a href="#">Forgot Password?</a>
+        <a href="#">Create New Account</a>
+    </form>
+</div>
+</body>
+</html>
